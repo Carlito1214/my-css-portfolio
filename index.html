@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <input type="checkbox" id="dark-mode-toggle">
+
+    <div class="sky-background">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <label for="dark-mode-toggle" class="toggle-label">
+                            <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="dark-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/pfp in coding.png" alt="Carlito Velaño Lavengco">
+                </div>
+                <div class="about-text">
+                    <p><strong>Name:</strong> Carlito Velaño Lavengco</p>
+                    <p><strong>Age:</strong> <span id="dynamic-age">20</span> yrs old</p>
+                    <p><strong>Birth Date:</strong> August 15, 2005</p>
+                    <p><strong>Address:</strong> Bartilad St., Tuhel, Ivana, Batanes</p>
+                    <p><strong>Hobbies:</strong></p>
+                    <ul>
+                        <li>Playing Table Tennis</li>
+                        <li>Playing Online games</li>
+                        <li>Photography</li>
+                        <li>Exploring</li>
+                    </ul>
+                    <br>
+                    <p>Hello! I am a web developer passionate about creating beautiful and functional websites using
+                        HTML and CSS.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Basics</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>html-user-account-creation-form-Lavengco-Carlito</h3>
+                    <p>A simple user account creation form built using HTML.</p>
+                    <a href="https://github.com/Carlito1214/html-user-account-creation-form-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-user-account-creation-form-lav.vercel.app" target="_blank">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>html-IT-portal-Iframe-Lavengco-Carlito</h3>
+                    <p>An IT portal built using HTML that includes an iframe to display external content.</p>
+                    <a href="https://github.com/Carlito1214/html-IT-portal-Iframe-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-it-portal-iframe-lavengco-carl.vercel.app" target="_blank">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>html-IT-students-schedule-Lavengco-Carlito</h3>
+                    <p>A student schedule built using HTML to help students organize their classes and activities.</p>
+                    <a href="https://github.com/Carlito1214/html-IT-students-schedule-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-it-students-schedule-lavengco.vercel.app" target="_blank">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>html-IT-project-demo-Lavengco-Carlito</h3>
+                    <p>A project demo built using HTML to showcase a specific project or idea.</p>
+                    <a href="https://github.com/Carlito1214/html-IT-project-demo-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-it-project-demo-lavengco-carli.vercel.app" target="_blank">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>html-student-registration-form-Lavengco-Carlito</h3>
+                    <p>A student registration form built using HTML to demonstrate form creation.</p>
+                    <a href="https://github.com/Carlito1214/html-student-registration-form-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-student-registration-form-lave.vercel.app/" target="_blank">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>html-study-playlists-Lavengco-Carlito</h3>
+                    <p>A study playlist built using HTML to help students organize their study sessions.</p>
+                    <a href="https://github.com/Carlito1214/html-study-playlists-Lavengco-Carlito.git"
+                        target="_blank">View Code</a>
+                    <a href="https://html-study-playlists-lavengco-carli.vercel.app" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:carlitoocgneval@gmail.com">carlitoocgneval@gmail.com</a></p>
+            <p><strong>Messenger:</strong> Otilrac Oñalev</p>
+            <p><strong>Mobile Number:</strong> <a href="tel:09693448295">09693448295</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
