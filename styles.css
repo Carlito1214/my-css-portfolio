@@ -332,6 +332,107 @@ footer {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Always-visible sticky and floating nav */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.sticky-top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    z-index: 1100;
+    padding: 0.45rem 0.75rem;
+}
+
+.sticky-top-nav a,
+.sticky-top-nav .shortcut-toggle {
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sticky-top-nav a:hover,
+.sticky-top-nav .shortcut-toggle:hover {
+    background: rgba(0, 123, 255, 0.15);
+    color: #0056b3;
+}
+
+.floating-section-nav {
+    position: fixed;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1100;
+    padding: 0.4rem;
+}
+
+.floating-section-nav a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.floating-section-nav a:hover {
+    background: #0056b3;
+}
+
+#dark-mode-toggle:checked ~ .sticky-top-nav,
+#dark-mode-toggle:checked ~ .floating-section-nav {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+#dark-mode-toggle:checked ~ .sticky-top-nav a,
+#dark-mode-toggle:checked ~ .sticky-top-nav .shortcut-toggle,
+#dark-mode-toggle:checked ~ .floating-section-nav a {
+    color: #fff;
+}
+
+#dark-mode-toggle:checked ~ .sticky-top-nav a:hover,
+#dark-mode-toggle:checked ~ .floating-section-nav a:hover,
+#dark-mode-toggle:checked ~ .sticky-top-nav .shortcut-toggle:hover {
+    background: rgba(100, 149, 237, 0.35);
+}
+
+@media (max-width: 768px) {
+    .floating-section-nav {
+        right: 0.5rem;
+        gap: 0.35rem;
+    }
+
+    .sticky-top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     nav ul {
